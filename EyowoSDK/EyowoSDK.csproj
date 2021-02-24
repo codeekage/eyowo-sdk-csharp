@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageVersion>0.0.1</PackageVersion>
+    <Authors>Abraham Agiri &lt;codeekage&gt;</Authors>
+    <Copyright>MIT</Copyright>
+    <DevelopmentDependency>true</DevelopmentDependency>
+    <PackageIconUrl>https://gblobscdn.gitbook.com/orgs%2F-M4Nd9uc2cjGMH9bWX0Y%2Favatar-1586330128900.png?alt=media</PackageIconUrl>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Owners>Abraham Agiri &lt;codeekage&gt;</Owners>
+    <PackageProjectUrl>https://github.com/codeekage/eyowo-sdk-csharp</PackageProjectUrl>
+    <PackageReleaseNotes>version</PackageReleaseNotes>
+    <Summary>Eyowo Developer SDK extends Eyowo core features to third party engineers to build products that contribute to solve financial exclusion in Nigeria and beyond Africa.</Summary>
+    <PackageTags>eyowo, fintech</PackageTags>
+    <Title>Eyowo C# SDK</Title>
+    <Description>Eyowo Developer SDK extends Eyowo core features to third party engineers to build products that contribute to solve financial exclusion in Nigeria and beyond Africa.</Description>
+    <PackageId>codeekage.eyowo.sdk</PackageId>
+    <StartupObject>EyowoApp</StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <PackageLicenseUrl>https://github.com/codeekage/eyowo-sdk-csharp/blob/main/LICENSE</PackageLicenseUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+</Project>
