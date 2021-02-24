@@ -23,6 +23,14 @@ First, complete the [signup](https://eyowo.gitbook.io/eyowo-developer-apis/getti
 
 Note: This SDK is functionality governed by the Federal Republic of Nigeria, do not be consume this SDK if you're not in Nigeria.
 
+### Base URLs
+
+| Namesapce | Class | Test URL | Prod URL |
+|-----------| ----- | -------- | -------- |
+| EyowoSDK.EyowoDeveloper | EyowoDeveloper | https://api.developer.staging-api.eyowo.com/v1 | https://api.developer.eyowo.com/v1 |
+| EyowoSDK.EyowoDeveloper | EyowoApp | https://api.console.staging-api.eyowo.com/v1 | https://api.console.eyowo.com/v1 |
+| EyowoSDK.EyowoDeveloper | EyowoAuthAppWallet |  https://api.console.staging-api.eyowo.com/v1 |  https://api.console.eyowo.com/v1 |
+
 ### Creating An App
 
 ```csharp
