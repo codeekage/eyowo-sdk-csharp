@@ -28,8 +28,8 @@ Note: This SDK is functionality governed by the Federal Republic of Nigeria, do 
 | Namesapce | Class | Test URL | Prod URL |
 |-----------| ----- | -------- | -------- |
 | EyowoSDK.EyowoDeveloper | EyowoDeveloper | https://api.developer.staging-api.eyowo.com/v1 | https://api.developer.eyowo.com/v1 |
-| EyowoSDK.EyowoDeveloper | EyowoApp | https://api.console.staging-api.eyowo.com/v1 | https://api.console.eyowo.com/v1 |
-| EyowoSDK.EyowoDeveloper | EyowoAuthAppWallet |  https://api.console.staging-api.eyowo.com/v1 |  https://api.console.eyowo.com/v1 |
+| EyowoSDK.EyowoApp | EyowoApp | https://api.console.staging-api.eyowo.com/v1 | https://api.console.eyowo.com/v1 |
+| EyowoSDK.EyowoAuth | EyowoAuthAppWallet |  https://api.console.staging-api.eyowo.com/v1 |  https://api.console.eyowo.com/v1 |
 
 ### Creating An App
 
