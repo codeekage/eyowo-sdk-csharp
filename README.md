@@ -491,11 +491,11 @@ Other Functionalities
 
 Please, contributions are welcomed. 
 
-See a bug? 🐛  : File an issue
-Have an idea? 💡 : Send a PR
-Have a question? 🙋 : contact -> codeekagebuilds@gmail.com
-CSharp doesn't fit my use-case 😥 : Check out [Eyowo's RESTFul](eyowo.gitbook.io)
+- See a bug? 🐛  : File an issue
+- Have an idea? 💡 : Send a PR
+- Have a question? 🙋 : 📧  codeekagebuilds@gmail.com
+- CSharp doesn't fit my use-case 😥 : Check out [Eyowo's RESTFul](eyowo.gitbook.io)
 
-I'll love to see what you build. ❤️ 🍾 
+**I'll love to see what you build. ❤️ 🍾 **
 
 
