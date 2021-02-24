@@ -5,14 +5,14 @@ using Newtonsoft.Json.Linq;
 
 namespace EyowoSDK.EyowoApp
 {
-    internal class EyowoApp : EyowoHttpController
+    public class EyowoApp : EyowoHttpController
     {
-        internal EyowoApp(string httpBaseURL, string appKey, string refreshToken)
+        public EyowoApp(string httpBaseURL, string appKey, string refreshToken)
             : base(httpBaseURL, appKey, refreshToken)
         {
         }
 
-        internal async Task<(string error, object data)> BankTransferAsync(
+        public async Task<(string error, object data)> BankTransferAsync(
            string accountNumber,
            long amount, string accountName, string bankCode)
         {
@@ -32,7 +32,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> GetBankTransferStatus(string transactionRef)
+        public async Task<(string error, object data)> GetBankTransferStatus(string transactionRef)
         {
             try
             {
@@ -49,7 +49,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> GetWalletByIdAsync(string walletID)
+        public async Task<(string error, object data)> GetWalletByIdAsync(string walletID)
         {
             try
             {
@@ -67,7 +67,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> GetWalletsAsync()
+        public async Task<(string error, object data)> GetWalletsAsync()
         {
             try
             {
@@ -84,7 +84,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> QueryBVNAsync(string bvnNumber)
+        public async Task<(string error, object data)> QueryBVNAsync(string bvnNumber)
         {
             try
             {
@@ -102,7 +102,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> GetBanksAsync()
+        public async Task<(string error, object data)> GetBanksAsync()
         {
             try
             {
@@ -120,7 +120,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> CreateUserAsync(string accountNumber)
+        public async Task<(string error, object data)> CreateUserAsync(string accountNumber)
         {
             try
             {
@@ -138,7 +138,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> EyowoTransferAsync(string accountNumber, string amount)
+        public async Task<(string error, object data)> EyowoTransferAsync(string accountNumber, string amount)
         {
             try
             {
@@ -157,7 +157,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> VtuPurchaseAsync(
+        public async Task<(string error, object data)> VtuPurchaseAsync(
                 string mobile,
                 string amount,
                 string provider
@@ -179,7 +179,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> GetWalletTransactions()
+        public async Task<(string error, object data)> GetWalletTransactions()
         {
             try
             {
@@ -196,7 +196,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<(string error, object data)> GetWalletTransaction(string transactionRef)
+        public async Task<(string error, object data)> GetWalletTransaction(string transactionRef)
         {
             try
             {

@@ -5,16 +5,16 @@ using Newtonsoft.Json.Linq;
 
 namespace EyowoSDK.EyowoApp
 {
-    internal class EyowoHttpController : EyowoUtility
+    public class EyowoHttpController : EyowoUtility
     {
         private readonly string refreshToken;
-        public EyowoHttpController(string httpBaseURL, string appKey, string refreshToken)
+        internal EyowoHttpController(string httpBaseURL, string appKey, string refreshToken)
             : base(httpBaseURL, appKey)
         {
             this.refreshToken = refreshToken;
         }
 
-        private async Task<(string error, string accessToken)> GetAccessToken()
+        protected internal async Task<(string error, string accessToken)> GetAccessToken()
         {
             try
             {
@@ -36,7 +36,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<JObject> SecuredPostAsync(string route, object body)
+        public async Task<JObject> SecuredPostAsync(string route, object body)
         {
             try
             {
@@ -58,7 +58,7 @@ namespace EyowoSDK.EyowoApp
             }
         }
 
-        internal async Task<JObject> SecuredGetAsync(string route)
+        public async Task<JObject> SecuredGetAsync(string route)
         {
             try
             {

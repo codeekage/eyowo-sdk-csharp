@@ -5,13 +5,13 @@ using Newtonsoft.Json.Linq;
 
 namespace EyowoSDK.EyowoAuth
 {
-    internal class EyowoAuthAppWallet : EyowoUtility
+    public class EyowoAuthAppWallet : EyowoUtility
     {
-        internal EyowoAuthAppWallet(string httpBaseURL, string appKey) : base(httpBaseURL, appKey)
+        public EyowoAuthAppWallet(string httpBaseURL, string appKey) : base(httpBaseURL, appKey)
         {
         }
 
-        internal async Task<(string error, string message)> SendAuthRequestAsync(string accountNumber, string factor)
+        public async Task<(string error, string message)> SendAuthRequestAsync(string accountNumber, string factor)
         {
             try
             {
@@ -30,7 +30,7 @@ namespace EyowoSDK.EyowoAuth
             }
         }
 
-        internal async Task<(string error, string message, object data)> AuthAccount(string accountNumber, string factor, string passcode)
+        public async Task<(string error, string message, object data)> AuthAccount(string accountNumber, string factor, string passcode)
         {
             try
             {
@@ -48,7 +48,7 @@ namespace EyowoSDK.EyowoAuth
             }
         }
 
-        internal async Task<bool> ValidateAccount(string accountNumber)
+        public async Task<bool> ValidateAccount(string accountNumber)
         {
             try
             {

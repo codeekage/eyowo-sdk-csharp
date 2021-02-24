@@ -6,7 +6,7 @@ using Newtonsoft.Json.Linq;
 
 namespace EyowoSDK
 {
-    internal class EyowoUtility
+    public class EyowoUtility
     {
         internal struct Response
         {
@@ -104,12 +104,12 @@ namespace EyowoSDK
             }
         }
 
-        internal void SetSecureHeader(string name, string value)
+        public void SetSecureHeader(string name, string value)
         {
             httpClient.DefaultRequestHeaders.Add(name, value);
         }
 
-        internal void Dispose()
+        public void Dispose()
         {
             httpClient.Dispose();
         }

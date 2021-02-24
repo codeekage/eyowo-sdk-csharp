@@ -5,7 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace EyowoSDK.EyowoDeveloper
 {
-    internal class EyowoDeveloperHttpController : EyowoUtility
+    public class EyowoDeveloperHttpController : EyowoUtility
     {
         private readonly string email;
         private readonly string password;
@@ -55,7 +55,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<JObject> SecuredGetAsync(string route)
+        public async Task<JObject> SecuredGetAsync(string route)
         {
             try
             {

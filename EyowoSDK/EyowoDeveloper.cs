@@ -4,14 +4,14 @@ using Newtonsoft.Json.Linq;
 
 namespace EyowoSDK.EyowoDeveloper
 {
-    internal class EyowoDeveloper : EyowoDeveloperHttpController
+   public class EyowoDeveloper : EyowoDeveloperHttpController
     {
-        protected internal EyowoDeveloper(string httpBaseURL, string email, string password)
+        public EyowoDeveloper(string httpBaseURL, string email, string password)
             : base(httpBaseURL, email, password)
         {
         }
 
-        protected internal async Task<(string error, object data)> CreateAppAsync(string appName)
+        public async Task<(string error, object data)> CreateAppAsync(string appName)
         {
             try
             {
@@ -29,7 +29,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetAppsAsync()
+        public async Task<(string error, object data)> GetAppsAsync()
         {
             try
             {
@@ -46,7 +46,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetAppAsync(string appID)
+        public async Task<(string error, object data)> GetAppAsync(string appID)
         {
             try
             {
@@ -63,7 +63,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetAppTransactions(string appID)
+        public async Task<(string error, object data)> GetAppTransactions(string appID)
         {
             try
             {
@@ -80,7 +80,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetAppTransaction(string appID, string transactionID)
+        public async Task<(string error, object data)> GetAppTransaction(string appID, string transactionID)
         {
             try
             {
@@ -97,7 +97,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetAppTransfers(string appID)
+        public async Task<(string error, object data)> GetAppTransfers(string appID)
         {
             try
             {
@@ -114,7 +114,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetAppTransfer(string appID, string transactionID)
+        public async Task<(string error, object data)> GetAppTransfer(string appID, string transactionID)
         {
             try
             {
@@ -131,7 +131,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetBankTransfers(string appID)
+        public async Task<(string error, object data)> GetBankTransfers(string appID)
         {
             try
             {
@@ -148,7 +148,7 @@ namespace EyowoSDK.EyowoDeveloper
             }
         }
 
-        protected internal async Task<(string error, object data)> GetEyowoTransfers(string appID)
+        public async Task<(string error, object data)> GetEyowoTransfers(string appID)
         {
             try
             {
