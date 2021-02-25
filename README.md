@@ -356,7 +356,7 @@ namespace EyowoTestFlight
 
             if (error != null)
             {
-                Console.WriteLine($"Failed when this bvn detials. Here's why: {error}");
+                Console.WriteLine($"Failed when querying this bvn detials. Here's why: {error}");
                 return;
             }
             Console.WriteLine($"Application {data}");
