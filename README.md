@@ -21,7 +21,7 @@ The SDK covers a range of useful features to make building a custom fintech appl
 
 First, complete the [signup](https://eyowo.gitbook.io/eyowo-developer-apis/getting-started/user-account-and-developer-mode) follow here and head back to start building your custom make fintech application.
 
-Note: This SDK is functionality governed by the Federal Republic of Nigeria, do not be consume this SDK if you're not in Nigeria.
+> Note: This SDK's functionality is governed and regulated by Centeral Bank of Nigeria, under the laws of the Federal Republic of Nigeria. Please, do not be consume this SDK if you're not in Nigeria.
 
 ### Base URLs
 
@@ -502,8 +502,8 @@ Please, contributions are welcomed.
 - See a bug? 🐛  : File an issue
 - Have an idea? 💡 : Send a PR
 - Have a question? 🙋 : 📧  codeekagebuilds@gmail.com
-- CSharp doesn't fit my use-case 😥 : Check out [Eyowo's RESTFul](eyowo.gitbook.io)
+- CSharp doesn't fit my use-case 😥 : Check out [Eyowo's RESTFul](eyowo.gitbook.io) API
 
-**I'll love to see what you build. ❤️ 🍾 **
+**I'll love to see what you build. ❤️ 🍾**
 
 
