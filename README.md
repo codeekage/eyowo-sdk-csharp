@@ -159,7 +159,7 @@ namespace EyowoTestFlight
 
             if (error != null)
             {
-                Console.WriteLine($"Failed to add application wallet. Here's why: {error}");
+                Console.WriteLine($"Failed to Authenticate wallet. Here's why: {error}");
                 return;
             }
             Console.WriteLine($"Application {data}");
@@ -210,7 +210,7 @@ namespace EyowoTestFlight
 
             if (error != null)
             {
-                Console.WriteLine($"Failed to create application. Here's why: {error}");
+                Console.WriteLine($"Failed to complete eyowo-to-eyowo transfer. Here's why: {error}");
                 return;
             }
             Console.WriteLine($"Application {data}");
@@ -258,7 +258,7 @@ namespace EyowoTestFlight
 
             if (error != null)
             {
-                Console.WriteLine($"Failed to create application. Here's why: {error}");
+                Console.WriteLine($"Failed to complete bank transfer. Here's why: {error}");
                 return;
             }
             Console.WriteLine($"Application {data}");
@@ -309,7 +309,7 @@ namespace EyowoTestFlight
 
             if (error != null)
             {
-                Console.WriteLine($"Failed to create application. Here's why: {error}");
+                Console.WriteLine($"Failed to get bank transfer status. Here's why: {error}");
                 return;
             }
             Console.WriteLine($"Application {data}");
@@ -356,7 +356,7 @@ namespace EyowoTestFlight
 
             if (error != null)
             {
-                Console.WriteLine($"Failed to create application. Here's why: {error}");
+                Console.WriteLine($"Failed when this bvn detials. Here's why: {error}");
                 return;
             }
             Console.WriteLine($"Application {data}");
